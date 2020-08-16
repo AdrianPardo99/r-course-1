@@ -61,9 +61,11 @@ Cabe resaltar que en la notación de flecha igual puede realizarse con doble fle
 __Tipos de datos__
 En R existen diversos tipos de datos, con los cuales podemos trabajar
 
-1. Logical
-2. Complex
-3. Numeric
-4. Character
-5. Integer
-6. Raw
+| Type | Values |
+| ----------- | ----------- |
+|  Logical    | True or False |
+|  Complex    | a+ib where a and b are numbers |
+|  Numeric    | Real values |
+|  Character  | Characters and String |
+|  Integer    | aL where a is a Integer |
+|  Raw        | Raw bits |
