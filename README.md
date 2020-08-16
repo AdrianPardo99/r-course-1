@@ -31,7 +31,7 @@ R siendo un lenguaje cuyo poder es bastante indescriptible, el sistema que manej
 ```bash
   #!/usr/bin/env Rscript
 
-  #!/bin/Rscript
+  #!/usr/bin/Rscript
 ```
 Cualquiera de estas dos opciones permitira la ejecución como aplicación, ante todo ello la extensión del archivo es con terminación ".R".
 
@@ -109,3 +109,4 @@ Si bien existen varias clases que convierten de un tipo de dato a otro, también
 
   # También existen otras funciones que permiten realizar esta tarea, para ello esta la doc de R
 ```
+# Funciones input #
