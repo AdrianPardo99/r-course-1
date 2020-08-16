@@ -59,6 +59,7 @@ Cabe resaltar que en la notación de flecha igual puede realizarse con doble fle
   30->>var.name_123 # Valido
 ```
 __Tipos de datos__
+
 En R existen diversos tipos de datos, con los cuales podemos trabajar
 
 | Type | Values |
@@ -69,3 +70,41 @@ En R existen diversos tipos de datos, con los cuales podemos trabajar
 |  Character  | Characters and String |
 |  Integer    | aL where a is a Integer |
 |  Raw        | Raw bits |
+
+__Listar todas las variables del programa__
+
+La bondad de R como lenguaje es que te permite listar las variables que están siendo utilizadas en el script/programa
+```R
+  print(ls())   # Lista todas las variables
+```
+__Conocer el tipo de dato de una variable o valor__
+
+Así como algunos lenguajes como lo hace Python, puedes saber el tipo de dato y el tipo de valor equivalente en "C"
+```R
+  print(class(1000))      # Clase de dato
+  print(typeof(1000))     # Tipo de dato
+```
+__Numeric to Integer__
+```R
+  varI=as.integer(1000.11)
+```
+__Integer to Numeric__
+```R
+  varI=as.numeric(1000L)
+```
+__Numeric to Complex__
+```R
+  varI=as.complex(1000.11)
+```
+__Más acerca del lenguaje__
+Si bien existen varias clases que convierten de un tipo de dato a otro, también existen funciones lógicas las cuales permiten saber el tipo de dato con el que se esta trabajando, por otro lado también existen funciones que permiten usar el estándar de salida en pantalla
+```R
+  print("String")
+  print(operation or variable)
+
+  # Para realizar uso del formato de salida de lenguaje C se puede usar las siguientes funciones
+  cat(sprint("String description %d",varInteger))
+  message(sprint("String description %d",varInteger))
+
+  # También existen otras funciones que permiten realizar esta tarea, para ello esta la doc de R
+```
