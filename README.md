@@ -97,6 +97,7 @@ __Numeric to Complex__
   varI=as.complex(1000.11)
 ```
 __Más acerca del lenguaje__
+
 Si bien existen varias clases que convierten de un tipo de dato a otro, también existen funciones lógicas las cuales permiten saber el tipo de dato con el que se esta trabajando, por otro lado también existen funciones que permiten usar el estándar de salida en pantalla
 ```R
   print("String")
