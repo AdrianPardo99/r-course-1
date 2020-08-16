@@ -34,3 +34,36 @@ R siendo un lenguaje cuyo poder es bastante indescriptible, el sistema que manej
   #!/bin/Rscript
 ```
 Cualquiera de estas dos opciones permitira la ejecución como aplicación, ante todo ello la extensión del archivo es con terminación ".R".
+
+# Hints #
+
+__Variables__
+
+Existen diversas formas en las cuales puedes puedes declarar variables
+```R
+  # Forma 1
+  var.name=10
+
+  # Forma 2
+  .varname<-20
+
+  # Forma 3
+  30->varname
+```
+Cabe resaltar que en la notación de flecha igual puede realizarse con doble flecha, incluso en la forma de escritura con ".", es necesario saber qué si se utiliza el punto seguido de ello debe escribirse una letra
+```R
+  .var122323=10     # Valido
+
+  .Var122<<-20      # Valido
+
+  30->>var.name_123 # Valido
+```
+__Tipos de datos__
+En R existen diversos tipos de datos, con los cuales podemos trabajar
+
+1. Logical
+2. Complex
+3. Numeric
+4. Character
+5. Integer
+6. Raw
