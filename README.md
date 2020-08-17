@@ -140,6 +140,9 @@ Si bien existen varias clases que convierten de un tipo de dato a otro, también
   # También existen otras funciones que permiten realizar esta tarea, para ello esta la doc de R
 ```
 # Funciones input #
+
+___Input___
+
 __Scan function__
 
 La función de scan puede leer datos reales a partir del estándar input o del flujo de entrada de un archivo, para la lectura a partir  de teclado es necesario ejecutarlo a partir de la consola interactiva del lenguaje R, el cual permite crear un arreglo de números reales hasta que el input sea un newline, la lectura puede hacerse de las siguientes formas
@@ -186,6 +189,9 @@ Readline es un lectura de datos de tipo carácter la cual puede venir acompañad
   splitList<-strsplit(variableRead," ")       # Split spaces
   data<-as.numeric(unlist(splitList))         # Datos a tipo númerico
 ```
+
+___Output___
+
 __Paste function__
 
 La función paste permite la concatenación de dos tipos de datos los cuales son mostrados en la salida estándar
@@ -215,4 +221,27 @@ Así como la función paste, paste0 funciona igual pero con un separador en blan
   paste0("A",1:10)
   # Output
   [1] "A1"  "A2"  "A3"  "A4"  "A5"  "A6"  "A7"  "A8"  "A9"  "A10"
+```
+__Cat function__
+
+Función de salida a pantalla la cual permite mostrar datos los cuales son separados por un espacio, conforme al orden en que es utilizado:
+```R
+  age=21
+  name="Adrian"
+  cat("Hi my name is ",name,", I'm ",age," years old\n")
+```
+También esta función puede servir para guardar datos en archivos csv, los cuales permiten guardar desde una numeración sencilla hasta una clasificación de datos.
+```R
+  cat(1:10,file="nums.csv",sep="\n",append="FALSE")
+  # En el archivo, Output
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+  10
 ```
