@@ -258,7 +258,7 @@ También esta función puede servir para guardar datos en archivos csv, los cual
 |  %/%    | División entera |
 
 # Operadores relacionales #
-Los operadores relaciones se utilizan en función de realizar operaciones lógicas las cuales devuelven un valor booleano TRUE o FALSE dependiendo de como se planea realizar una aplicación o script
+Los operadores relaciones se utilizan en función de realizar operaciones lógicas las cuales devuelven un valor booleano TRUE o FALSE dependiendo de como se planea realizar en la aplicación o script
 | Símbolo | Operación |
 | ------- | --------- |
 |    <    | Menor que |
@@ -267,3 +267,30 @@ Los operadores relaciones se utilizan en función de realizar operaciones lógic
 |   >=    | Mayor igual que |
 |   ==    | Igual que |
 |   !=    | Distinto que |
+
+# Operadores lógicos #
+Los operadores lógicos funcionan para realizar el álgebra booleana entre datos booleanos.
+| Símbolo | Operación |
+| ------- | --------- |
+|   \|    | Compuerta OR para cada dato |
+|  \|\|   | Compuerta OR para el primer dato del vector  |
+|   \&    | Compuerta AND para cada dato |
+| \&\&    | Compuerta AND para el primer dato del vector |
+|    !    | Compuerta NOT para cada dato |
+
+# Operadores de asignación #
+Los operadores de asignación funcionan para asignar valores a diversas variables, en las cuales puedes almacenar para más tarde operar con ellas
+| Símbolo | Operación |
+| ------- | --------- |
+|  \-\>   | Asignación hacia la derecha |
+|  \-\>\> | Asignación hacia la derecha |
+|  \<\-   | Asignación hacia la izquierda |
+| \<\<\-  | Asignación hacia la izquierda |
+
+# Operadores miscellaneous #
+Estos operadores ayudan en la escritura asignación rápida en variables y distintas cosas a la hora de trabajar con el código.
+| Símbolo | Operación |
+| ------- | --------- |
+|    :    | Operación de secuencia de datos de un valor x a un valor y |
+|   %in%  | Este operador funciona para ver si un elemento pertenece o no a un vector |
+|   %*%   | Este operador funciona para multiplicación de matrices |
