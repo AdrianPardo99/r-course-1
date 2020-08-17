@@ -33,7 +33,28 @@ R siendo un lenguaje cuyo poder es bastante indescriptible, el sistema que manej
 
   #!/usr/bin/Rscript
 ```
-Cualquiera de estas dos opciones permitira la ejecución como aplicación, ante todo ello la extensión del archivo es con terminación ".R".
+Cualquiera de estas dos opciones permitira la ejecución como aplicación, ante todo ello la extensión del archivo es con terminación ".R", ".rdata", ".rds", ".rda".
+
+# R vs Python #
+Si bien Python es poderoso lenguaje de programación el cual permite trabajar con distintos módulos dedicados a la ciencias y la investigación, recordemos lo que nos dice la descripción y fin del mismo.
+
+__Python__
+
+* Licencia Open Source
+* Lenguaje interpretado
+* Propósito general
+* Desarrollo rápido
+* Desarrollo escalar
+* Usuarios principales: Programadores y desarrolladores
+
+__R__
+
+* Licencia Open Source
+* Lenguaje precompilado
+* Propósito en ciencias de datos, estadística e investigación
+* Desarrollo enfatizado en modelado matemático
+* Desarrollado por matemáticos y físicos
+* Usuarios principales: Estudiantes, estadísticos, investigadores
 
 # Hints #
 
@@ -96,6 +117,15 @@ __Numeric to Complex__
 ```R
   varI=as.complex(1000.11)
 ```
+
+__For quick__
+```R
+  varI=0:10
+  varI
+  # Output
+  [1]  0  1  2  3  4  5  6  7  8  9 10
+```
+
 __Más acerca del lenguaje__
 
 Si bien existen varias clases que convierten de un tipo de dato a otro, también existen funciones lógicas las cuales permiten saber el tipo de dato con el que se esta trabajando, por otro lado también existen funciones que permiten usar el estándar de salida en pantalla
@@ -155,4 +185,34 @@ Readline es un lectura de datos de tipo carácter la cual puede venir acompañad
   variableRead<-readline(prompt="Output for read line in the interactive console: ")
   splitList<-strsplit(variableRead," ")       # Split spaces
   data<-as.numeric(unlist(splitList))         # Datos a tipo númerico
+```
+__Paste function__
+
+La función paste permite la concatenación de dos tipos de datos los cuales son mostrados en la salida estándar
+```R
+  paste("val",1,"val",30,"val")
+  # Output
+  [1] "val 1 val 30 val"
+
+  paste("A",1:10)
+  # Output
+  [1] "A 1"  "A 2"  "A 3"  "A 4"  "A 5"  "A 6"  "A 7"  "A 8"  "A 9"  "A 10"
+
+  paste("A",1:10,sep='')
+  # Output
+  [1] "A1"  "A2"  "A3"  "A4"  "A5"  "A6"  "A7"  "A8"  "A9"  "A10"
+
+  Vector in R with paste
+  c(data,data1)     # Create a vector
+  paste(c(1:10),collapse=" ; ")
+  # Output
+  [1] "1;2;3;4;5;6;7;8;9;10"
+```
+__Paste0 function__
+
+Así como la función paste, paste0 funciona igual pero con un separador en blanco así como el ejemplo de sep=''
+```R
+  paste0("A",1:10)
+  # Output
+  [1] "A1"  "A2"  "A3"  "A4"  "A5"  "A6"  "A7"  "A8"  "A9"  "A10"
 ```
