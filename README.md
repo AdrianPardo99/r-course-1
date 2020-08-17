@@ -245,3 +245,25 @@ También esta función puede servir para guardar datos en archivos csv, los cual
   9
   10
 ```
+# Operadores aritméticos #
+| Símbolo | Operación |
+| ------- | --------- |
+|    +    | Adición/Suma |
+|    -    | Sustracción/Resta |
+|    *    | Producto/Multiplicación |
+|    /    | División |
+|   **    | Potencia |
+|    ^    | Potencia |
+|   %%    | Modulo   |
+|  %/%    | División entera |
+
+# Operadores relacionales #
+Los operadores relaciones se utilizan en función de realizar operaciones lógicas las cuales devuelven un valor booleano TRUE o FALSE dependiendo de como se planea realizar una aplicación o script
+| Símbolo | Operación |
+| ------- | --------- |
+|    <    | Menor que |
+|    >    | Mayor que |
+|   <=    | Menor igual que |
+|   >=    | Mayor igual que |
+|   ==    | Igual que |
+|   !=    | Distinto que |
