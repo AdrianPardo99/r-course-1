@@ -332,4 +332,87 @@ Es una estructura de datos la cual almacena un tipo de dato cualquiera que permi
   vec[initVar]<-100 # Modificación del vector en la posición initVar con 100
 
 ```
+___Utilidad___
+* Inteligencia artificial
+* Modelo de alimentación para Deep Learning
+* Soporte para algoritmos en procesos de Machine Learning
+* Procesamiento de texto
+* Procesamiento de imágenes
+* Modelo de alimentación para Redes Neuronales
+
 __Listas__
+
+Es una estructura la cual puede contener datos de distintos tipos, por lo cual genera una gran diferencia con respecto a la estructura vector, el cual internamente contiene vectores
+```R
+  listVar=list(c(1:10),c("a","b","c"))
+  listVar
+  # Output
+  [[1]]
+   [1]  1  2  3  4  5  6  7  8  9 10
+
+  [[2]]
+  [1] "a" "b" "c"
+
+  # Accediendo a un elemento de la lista
+  listVar[1]
+  # Output
+  [[1]]
+  [1]  1  2  3  4  5  6  7  8  9 10
+
+  # Accediendo al conjunto vector de la lista
+  listVar[[1]]
+  # Output
+  [1]  1  2  3  4  5  6  7  8  9 10
+
+  # Para acceder a un dato en particular de un vector
+  listVar[[2]][2]
+  # Output
+  [1] "b"
+
+  # Muestra la estructura de arbol de la lista:
+  str(listVar)
+  # Output
+  $ : int [1:10] 1 2 3 4 5 6 7 8 9 10
+  $ : chr [1:3] "a" "b" "c"
+
+  # Modificando elemento en particular inicio reescribiendo el vector
+  listVar[1]=10
+  listVar
+  # Output
+  [[1]]
+   [1]  10
+
+  [[2]]
+  [1] "a" "b" "c"
+
+  # Modificación de un vector de elementos posición
+  listVar[[1]]=c(10:20)
+  listVar
+  # Output
+  [[1]]
+  [1] 10 11 12 13 14 15 16 17 18 19 20
+
+  [[2]]
+  [1] "a" "b" "c"
+
+  # Modificando un solo elemento de la lista
+  listVar[[2]][2]="d"
+  listVar
+  # Output
+  [[1]]
+  [1] 10 11 12 13 14 15 16 17 18 19 20
+
+  [[2]]
+  [1] "a" "d" "c"
+
+  # Algunas otras operaciones de las listas son
+  # - Nombrar columna de la lista
+  names(listVar)<-c("Numeros","Letras")
+  # - Fusionar lista de elementos (listas de listas)
+  newList<-c(list1,list2)
+  # - Convertir lista a vector
+  vectorList<-unlist(newList)
+  # - Convertir vector a lista
+  newList1<-as.list(vectorList)
+
+```
