@@ -294,3 +294,42 @@ Estos operadores ayudan en la escritura asignación rápida en variables y disti
 |    :    | Operación de secuencia de datos de un valor x a un valor y |
 |   %in%  | Este operador funciona para ver si un elemento pertenece o no a un vector |
 |   %*%   | Este operador funciona para multiplicación de matrices |
+
+# Estructuras de datos #
+__Vectores__
+
+Es una estructura de datos la cual almacena un tipo de dato cualquiera que permite operar más tarde con los mismos datos almacenados
+```R
+  # Creación de un vector: para crear un vector es necesario usar la función c()
+  vec<-c(1,2,3,4,5,6)
+  # Para ver el tamaño del vector:
+  length(vec)
+  # Tambien se puede crear un vector a partir de la Operación de secuencia
+  vec<-(1:6)
+
+  # Creación de un vector a partir de una secuencia
+  1->initVal
+  20->finalVal
+  1.5->increment
+  vec<-seq(initVal,finalVal,by=increment)
+  vec
+  # Output
+  [1]  1.0  2.5  4.0  5.5  7.0  8.5 10.0 11.5 13.0 14.5 16.0 17.5 19.0
+
+  # Acceso a datos del vector
+  initVar=3
+  vec[initVar]      # Acceso al valor de la variable initVar
+  # Output
+  [1] 4
+
+
+  vecVar=c(1,3)
+  vec[vecVar]
+  # Output
+  [1] 1 4
+
+  # Para modificar los datos puedes usar
+  vec[initVar]<-100 # Modificación del vector en la posición initVar con 100
+
+```
+__Listas__
