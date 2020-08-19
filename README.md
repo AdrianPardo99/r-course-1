@@ -532,7 +532,7 @@ Es una estructura de datos la cual almacena datos de manera bidimensional, es de
     [2,] -0.3333333  0.66666667 -0.3333333
     [3,]  0.2222222  0.05555556 -0.1111111
   A
-    # Output 
+    # Output
           [,1] [,2] [,3]
     [1,]    1    2    7
     [2,]    2    6    8
@@ -558,4 +558,69 @@ Es una estructura de datos la cual almacena datos de manera bidimensional, es de
     # Output
     [1] 2 5 8
 
+```
+__Array__
+
+Es una estructura que permite almacenar datos de una dimensión de N elementos o en su defecto puede existir arreglos de M dimensiones con A,B,C espacios en memoria
+```R
+  arr<-array(c(11:22),dim=c(2,3,2))
+  arr
+  # Output
+    , , 1
+
+          [,1] [,2] [,3]
+    [1,]   11   13   15
+    [2,]   12   14   16
+
+    , , 2
+
+          [,1] [,2] [,3]
+    [1,]   17   19   21
+    [2,]   18   20   22
+
+  # Al igual que las matrices se puede añadir nombre de filas y columnas con la misma función
+
+
+  # Acceder a la primer parte de la dimensión
+  arr[1,,]
+  # Output
+          [,1] [,2]
+    [1,]   11   17
+    [2,]   13   19
+    [3,]   15   21
+
+  # Acceder a la segunda parte de la dimensión
+  arr[,1,]
+  # Output
+         [,1] [,2]
+    [1,]   11   17
+    [2,]   12   18
+
+  # Acceder a la tercer parte de la dimensión
+  arr[,,1]
+  # Output
+          [,1] [,2] [,3]
+    [1,]   11   13   15
+    [2,]   12   14   16
+
+  # Acceder a dos dimensiones forma 1
+  arr[1,1,]
+  # Output
+    [1] 11 17
+
+  # Acceder a dos dimensiones forma 2
+  arr[1,,1]
+  # Output
+    [1] 11 13 15
+
+  # Acceder a dos dimensiones forma 3
+    [1] 11 12
+
+  # Acceder a un elemento en particular
+  arr[1,1,1]
+  # Output
+    [1] 11
+
+  # Para modificar sus datos podemos hacerlo de forma particular o en vectores dependiendo
+    # el tamaño de como es repartido.
 ```
