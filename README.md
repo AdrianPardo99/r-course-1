@@ -416,3 +416,146 @@ Es una estructura la cual puede contener datos de distintos tipos, por lo cual g
   newList1<-as.list(vectorList)
 
 ```
+__Matrices__
+
+Es una estructura de datos la cual almacena datos de manera bidimensional, es decir, cuentas con un acceso a los datos marcando 2 dimensiones
+```R
+  # Creación de la matriz
+  vector<-c(11:20)
+  numFilas<-5
+  numColumnas<-2
+  var<-matrix(vector,numFilas,numColumnas)
+  var
+  # Output
+        [,1] [,2]
+  [1,]   11   16
+  [2,]   12   17
+  [3,]   13   18
+  [4,]   14   19
+  [5,]   15   20
+
+  # Crear matriz añadiendo los datos columna a columna
+  A<-cbind(c(5,6,7),c(8,9,10))
+  A
+  # Output
+        [,1] [,2]
+  [1,]    5    8
+  [2,]    6    9
+  [3,]    7   10
+
+  # Crear matriz añadiendo los datos fila a fila
+  B<-rbind(c(5,6,7),c(8,9,10))
+  B
+  # Output
+        [,1] [,2] [,3]
+  [1,]    5    6    7
+  [2,]    8    9   10
+
+
+  # Acceder a datos por columna
+  A[,1]
+  # Output
+  [1] 5 6 7
+
+  # Acceder a datos por fila
+  A[1,]
+  # Output
+  [1] 5 8
+
+  # Acceder a un dato con fila,columna
+  A[2,1]
+  # Output
+  [1] 6
+
+
+  # Modificar datos a partir de la columna
+  A[,1]<-c(10:12)
+  A
+  # Output
+        [,1] [,2]
+  [1,]   10    8
+  [2,]   11    9
+  [3,]   12   10
+
+  # Modificar datos a partir de la fila
+  A[2,]<-c(2:3)^2
+  A
+  # Output
+        [,1] [,2]
+  [1,]   10    8
+  [2,]    4    9
+  [3,]   12   10
+
+  # Modificar un dato en particular con fila,columna
+  A[2,1]<-25
+  A
+  # Output
+        [,1] [,2]
+  [1,]   10    8
+  [2,]   25    9
+  [3,]   12   10
+
+  # Algunas otras operaciones de las listas son
+  # - Suma/Resta de matrices N*N +/- N*N
+  A+A
+  A-A
+  # - Multiplicación de matrices (N*M)(M*S)
+  A%*%B
+  # - Nombrar filas y columnas
+  rownames=c("name1","name2","name3")
+  colnames=c("col1","col2")
+  dimnames(A)<-list(rownames,colnames)
+  A
+    # Output
+          col1 col2
+    name1   10    8
+    name2   25    9
+    name3   12   10
+    # Cabe destacar que en la asignación de nombres de fila y columna se puede hacer
+      # desde la creación de la matriz
+    matriz1<-matrix(datos,numFilas,numColumnas,dimnames=list(vectorFilas,vectorC))
+
+  # - Matriz transpuesta
+  t(A)
+    # Output
+            name1 name2 name3
+    col1    10    25    12
+    col2     8     9    10
+  # - Matriz inversa (Matriz cuadrada)
+  A<-matrix((1:16),4,4)
+  A[,2]<-c(2,6,7)
+  iA<-solve(A)
+  iA
+    # Output
+                [,1]        [,2]       [,3]
+    [1,]  0.1111111 -1.72222222  1.4444444
+    [2,] -0.3333333  0.66666667 -0.3333333
+    [3,]  0.2222222  0.05555556 -0.1111111
+  A
+    # Output 
+          [,1] [,2] [,3]
+    [1,]    1    2    7
+    [2,]    2    6    8
+    [3,]    3    7    9
+
+  # - Determinante de la matriz
+  det(A)
+    # Output
+    [1] -18
+
+  # - Obtener la dimensión de la matriz
+  dim(A)
+    # Output
+    [1] 3 3
+
+  # - Sumar filas y obtener promedio por fila
+  rowMeans(A)
+    #Output
+    [1] 3.333333 5.333333 6.333333
+
+  # - Sumar columnas y obtener promedio por columna
+  colMeans(A)
+    # Output
+    [1] 2 5 8
+
+```
