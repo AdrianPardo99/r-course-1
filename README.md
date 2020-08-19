@@ -624,3 +624,73 @@ Es una estructura que permite almacenar datos de una dimensión de N elementos o
   # Para modificar sus datos podemos hacerlo de forma particular o en vectores dependiendo
     # el tamaño de como es repartido.
 ```
+
+__Data frames__
+
+Es una estructura de datos la cual esta especificada para hacer uso de investigadores los cuales tienen una pequeña especificación la cual es:
+* Filas (Observaciones)
+* Columnas (Mediciones)
+
+Por lo tanto la estructura Data Frame es bidimensional la cual su contenido son vectores heterogéneos, en los cuales podemos hacer las mismas operaciones que hacíamos con las estructuras anteriores
+
+```R
+  # Creación
+  data_frame<-data.frame(c(1,2,3), c("X","Y","Z"),c("TRUE", "FALSE", "TRUE"))
+  data_frame
+  # Output
+      c.1..2..3. c..X....Y....Z.. c..TRUE....FALSE....TRUE..
+    1          1                X                       TRUE
+    2          2                Y                      FALSE
+    3          3                Z                       TRUE
+
+
+  # Acceso en la primer dimensión
+  data_frame[1,]
+  # Output
+      c.1..2..3. c..X....Y....Z.. c..TRUE....FALSE....TRUE..
+    1          1                X                       TRUE
+
+  # Acceso en la segunda dimensión
+  data_frame[,1]
+  # Output
+  [1] 1 2 3
+
+  # Acceso a un solo dato
+  data_frame[1,1]
+  # Output
+  [1] 1
+
+  # Para eliminar datos
+    # Para eliminar solo hay que acceder a la columna la cual se asignara a NULL
+
+  # Podemos añadir datos a partir de rbind
+
+  # Cuando accedemos a una posición en la cual no hay datos del data_frame obtendremos un valor NULL
+
+
+  # Una modificación a partir de la columna es el siguiente ejemplo
+  data_frame[,1]<-c(1:3)*10
+  data_frame
+  # Output
+      c.1..2..3. c..X....Y....Z.. c..TRUE....FALSE....TRUE..
+    1         10                X                       TRUE
+    2         20                Y                      FALSE
+    3         30                Z                       TRUE
+```
+
+# If-Else #
+Es una estructura lógica de decisión la cual permite ejecutar bloques de código los cuales
+
+```R
+  a<-readline(prompt="Enter a number: ")
+  if(a>0){
+    print("Positive number")
+  }else if(a==0){
+    print("Zero")
+  }else if(a<0){
+    print("Negative number")
+  }
+
+  # Cuando el programa sea ejecutado dependiendo de la entrada es lo que mostrara
+    # El bloque logico If-Else
+```
