@@ -694,3 +694,19 @@ Es una estructura lógica de decisión la cual permite ejecutar bloques de códi
   # Cuando el programa sea ejecutado dependiendo de la entrada es lo que mostrara
     # El bloque logico If-Else
 ```
+
+# Ayuda y documentación
+
+R siendo un lenguaje catalogado por muchos como un lenguaje que se caracteriza por tener una curva de aprendizaje acorde a la paquetería y módulos que son instalados externamente, es decir, puede ser desde lo más sencillo hasta lo más complicado, cuenta con una función que despliega la documentación y ayuda con respecto aun tipo de dato o función.
+
+```R
+  # Para desplegar dicha documentación basta con
+  help("ls")
+  help("vector")
+  help("function or value")
+
+  # Forma 2
+  ??print
+  ??vector
+
+```
