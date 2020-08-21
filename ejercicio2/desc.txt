@@ -1,0 +1,8 @@
+1- Crear una matriz con 2 filas y 4 columnas, con estos dos vectores,
+    vector1<-(4,10,5,3) vector2<-(2,8,25,14)
+2- Crear una matriz con 6 filas y 4 columnas del 1 al 24 con nrow
+3- Seleccionar el valor de la fila 3 y columna 4 de la matriz
+4- Crear una nueva matriz seleccionando las 3 primeras filas y las 2 primeras
+    columnas
+5- A esta nueva matriz, añadirle una columna que sea la suma de los valores de
+    cada fila
