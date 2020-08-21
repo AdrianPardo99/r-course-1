@@ -1,0 +1,7 @@
+Ejercicio
+1- Crear un vector denominado ventas con los valores 120, 140, 90
+2- Asignar estos valores "Enero", "Febrero", "Marzo" como nombres de
+    las columnas del vector
+3- Calcular la media de ventas de los 3 meses
+4- Crear un nuevo vector con los elementos con ventas mayores que 100
+5- Calcular cual es el mes con mayores ventas
