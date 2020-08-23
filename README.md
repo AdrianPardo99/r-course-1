@@ -676,6 +676,23 @@ Por lo tanto la estructura Data Frame es bidimensional la cual su contenido son 
     1         10                X                       TRUE
     2         20                Y                      FALSE
     3         30                Z                       TRUE
+
+  # Datasets que funcionan para hacer ejercicios y pruebas de data frames
+    # De las bondades para este lenguaje es que ya hay datasets para trabajar, para ver cuales
+    # son el contenido solo hay que teclear
+  data()
+
+  # Para ello podremos hacer uso de ellos llamándolos mediante su nombre, por ejemplo
+  AirPassengers
+
+  # Analizando el contenido de las columnas podemos hacer lo siguiente
+  str(AirPassengers)
+
+  #Para obtener valores estadísticos por columna
+  summary(AirPassengers)
+
+
+
 ```
 
 # If-Else #
